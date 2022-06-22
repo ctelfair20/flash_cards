@@ -1,0 +1,42 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-bar {
+  height: 50px;
+  width: auto;
+  background-color: #F18805;
+  border-bottom: 2px solid #2C302E;
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Link styling */
+a {
+  font-weight: 600;
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+  color: #F5F5F5;
+}
+
+/* visited link */
+a:visited {
+  color: #F5F5F5;
+}
+
+/* mouse over link */
+a:hover {
+  color: #909590;
+}
+
+/* selected link */
+a:active {
+  color: #2C302E;
+}
