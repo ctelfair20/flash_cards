@@ -1,5 +1,7 @@
 #flashcard-container {
-  border: 5px solid black;
+  border: 3px solid rgb(127, 124, 124);
+  border-radius: 5px;
+  box-shadow: cadetblue;
   display: flex;
   justify-content: center;
   align-items: center;
