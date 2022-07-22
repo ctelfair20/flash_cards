@@ -1,5 +1,7 @@
 #test-view {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 3px solid black;
+  height: 100px;
+  /* justify-content: center;
+  align-items: center; */
 }

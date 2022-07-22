@@ -2,17 +2,18 @@ import FlashCard from '../FlashCard/FlashCard';
 import './TestView.css';
 
 const TestView = ({ rawData }) => {
+  // console.log(rawData);
 
-  const mapData = (rawData) => {
-    mapData.map((questionObj, i) => {
+  const mapData = () => {
+    return rawData.map((questionObj, i) => {
       return <FlashCard key={i} questionObj={questionObj} />;
     });
   };
 
   return (
-    <main id='test-view'>
+    <div id='test-view'>
       {mapData()}
-    </main>
+    </div>
   );
 }
 
