@@ -1,13 +1,13 @@
-// import logo from './logo.svg';
-import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import TestView from './components/TestView/TestView';
+import rawData from './rawData';
+import './App.css';
 
 function App() {
   return (
     <>
       <NavBar />
-      <TestView />
+      <TestView rawData={rawData} />
     </>
   );
 }
