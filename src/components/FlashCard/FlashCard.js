@@ -5,11 +5,11 @@ const FlashCard = ({ questionObj }) => {
   return (
     <div id="flashcard-container">
       <span>
-        {questionObj.question}
+        {`Q: ${questionObj.question}`}
       </span>
-      <span>
-        {questionObj.answer}
-      </span>
+      {/* <span>
+        {`A: ${questionObj.answer}`}
+      </span> */}
     </div>
   );
 }
