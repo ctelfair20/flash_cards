@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <NavBar />
-      <FlashCard />
+      <main>
+        <FlashCard />
+      </main>
     </>
   );
 }

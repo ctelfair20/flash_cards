@@ -1,8 +1,9 @@
 import rawData from '../../rawData';
+import './FlashCard.css';
 
 const FlashCard = () => {
   return (
-    <div>hi</div>
+    <div id="flashcard-container">hi</div>
   );
 }
 
