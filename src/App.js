@@ -1,15 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import FlashCard from "./components/FlashCard/FlashCard.js";
+import TestView from './components/TestView/TestView';
+import FlashCard from './components/FlashCard/FlashCard';
 
 function App() {
   return (
     <>
       <NavBar />
-      <main>
+      <TestView>
         <FlashCard />
-      </main>
+      </TestView>
     </>
   );
 }

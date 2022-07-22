@@ -1,4 +1,3 @@
-import rawData from '../../rawData';
 import './FlashCard.css';
 
 const FlashCard = ({ questionObj }) => {
