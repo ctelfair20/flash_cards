@@ -1,7 +1,11 @@
 const rawData = [
   {
     question: "Explain event delegation.",
-    answer: ""
+    answer: "Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM."
+  },
+  {
+    question: "What are the benefits of event delegation?",
+    answer: "1. Memory footprint goes down because only one single handler is needed on the parent element, rather than having to attach event handlers on each descendant. 2. There is no need to unbind the handler from elements that are removed and to bind the event for new elements."
   },
   {
     question: "Explain how 'this' works in JavaScript.",
