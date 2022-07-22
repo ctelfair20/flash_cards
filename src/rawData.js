@@ -214,3 +214,5 @@ const rawData = [
     answer: ""
   }
 ]
+
+export default rawData;
