@@ -1,10 +1,12 @@
+import { useState } from 'react';
 import FlashCard from '../FlashCard/FlashCard';
+import rawData from '../../rawData';
 import './TestView.css';
 
-const TestView = ({ rawData }) => {
-
+const TestView = () => {
+  const [flashcards, setFlashcards] = useState(rawData)
   const mapData = () => {
-    return rawData.map((questionObj, i) => {
+    return flashcards.map((questionObj, i) => {
       return <FlashCard key={i} questionObj={questionObj} />;
     });
   };
