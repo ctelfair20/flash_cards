@@ -2,7 +2,6 @@ import FlashCard from '../FlashCard/FlashCard';
 import './TestView.css';
 
 const TestView = ({ rawData }) => {
-  // console.log(rawData);
 
   const mapData = () => {
     return rawData.map((questionObj, i) => {
