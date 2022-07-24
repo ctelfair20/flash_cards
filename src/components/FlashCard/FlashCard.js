@@ -6,12 +6,7 @@ const FlashCard = ({ questionObj }) => {
   // add click event to flip card to show answer
   return (
     <div id="flashcard-container" onClick={() => { setFlipped(!isFlipped) }}>
-      <span>
-        {`Q: ${questionObj.question}`}
-      </span>
-      {/* <span>
-        {`A: ${questionObj.answer}`}
-      </span> */}
+      {isFlipped ? `A: ${questionObj.answer}` : `Q: ${questionObj.question}`}
     </div>
   );
 }
