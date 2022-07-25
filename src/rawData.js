@@ -122,11 +122,11 @@ const rawData = [
   },
   {
     question: "Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?",
-    answer: ""
+    answer: "Every script has access to the global scope, and if everyone uses the global namespace to define their variables, collisions will likely occur. Use the module pattern (IIFEs) to encapsulate your variables within a local namespace."
   },
   {
     question: "Why would you use something like the load event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?",
-    answer: ""
+    answer: "The load event fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links and sub-frames have finished loading. --The DOM event DOMContentLoaded will fire after the DOM for the page has been constructed, but do not wait for other resources to finish loading. This is preferred in certain cases when you do not need the full page to be loaded before initializing."
   },
   {
     question: "Explain what a single page app is and how to make one SEO-friendly.",
@@ -161,11 +161,11 @@ const rawData = [
   },
   {
     question: "Explain the difference between synchronous and asynchronous functions.",
-    answer: ""
+    answer: "Synchronous functions are blocking while asynchronous functions are not. In synchronous functions, statements complete before the next statement is run. In this case, the program is evaluated exactly in order of the statements and execution of the program is paused if one of the statements take a very long time.Asynchronous functions usually accept a callback as a parameter and execution continue on the next line immediately after the asynchronous function is invoked. The callback is only invoked when the asynchronous operation is complete and the call stack is empty. Heavy duty operations such as loading data from a web server or querying a database should be done asynchronously so that the main thread can continue executing other operations instead of blocking until that long operation to complete (in the case of browsers, the UI will freeze)."
   },
   {
     question: "What is event loop? What is the difference between call stack and task queue?",
-    answer: ""
+    answer: "The event loop is a single-threaded loop that monitors the call stack and checks if there is any work to be done in the task queue. If the call stack is empty and there are callback functions in the task queue, a function is dequeued and pushed onto the call stack to be executed. If you haven't already checked out Philip Robert's talk on the Event Loop, you should. It is one of the most viewed videos on JavaScript."
   },
   {
     question: "Explain the differences on the usage of foo between function foo() {} and var foo = function() {}",
@@ -173,26 +173,26 @@ const rawData = [
   },
   {
     question: "What are the differences between variables created using let, var or const?",
-    answer: ""
+    answer: "Variables declared using the var keyword are scoped to the function in which they are created, or if created outside of any function, to the global object. let and const are block scoped, meaning they are only accessible within the nearest set of curly braces (function, if-else block, or for-loop). var allows variables to be hoisted, meaning they can be referenced in code before they are declared. let and const will not allow this, instead throwing an error. Redeclaring a variable with var will not throw an error, but let and const will. let and const differ in that let allows reassigning the variable's value while const does not."
   }, {
     question: "What are the differences between ES6 class and ES5 function constructors?",
     answer: ""
   },
   {
     question: "Can you offer a use case for the new arrow => function syntax? How does this new syntax differ from other functions?",
-    answer: ""
+    answer: "One obvious benefit of arrow functions is to simplify the syntax needed to create functions, without a need for the function keyword. The this within arrow functions is also bound to the enclosing scope which is different compared to regular functions where the this is determined by the object calling it. Lexically-scoped this is useful when invoking callbacks especially in React components."
   },
   {
     question: "What advantage is there for using the arrow syntax for a method in a constructor?",
-    answer: ""
+    answer: "The main advantage of using an arrow function as a method inside a constructor is that the value of this gets set at the time of the function creation and can't change after that. So, when the constructor is used to create a new object, this will always refer to that object. The main takeaway here is that this can be changed for a normal function, but the context always stays the same for an arrow function. So even if you are passing around your arrow function to different parts of your application, you wouldn't have to worry about the context changing. --This can be particularly helpful in React class components. If you define a class method for something such as a click handler using a normal function, and then you pass that click handler down into a child component as a prop, you will need to also bind this in the constructor of the parent component. If you instead use an arrow function, there is no need to also bind 'this', as the method will automatically get its 'this' value from its enclosing lexical context."
   },
   {
     question: "What is the definition of a higher-order function?",
-    answer: ""
+    answer: "A higher-order function is any function that takes one or more functions as arguments, which it uses to operate on some data, and/or returns a function as a result. Higher-order functions are meant to abstract some operation that is performed repeatedly. The classic example of this is map, which takes an array and a function as arguments. map then uses this function to transform each item in the array, returning a new array with the transformed data. Other popular examples in JavaScript are forEach, filter, and reduce. A higher-order function doesn't just need to be manipulating arrays as there are many use cases for returning a function from another function. Function.prototype.bind is one such example in JavaScript."
   },
   {
     question: "Can you give an example for destructuring an object or an array?",
-    answer: ""
+    answer: "Destructuring is an expression available in ES6 which enables a succinct and convenient way to extract values of Objects or Arrays and place them into distinct variables Array destructuring Object destructuring. Array destructuring"
   },
   {
     question: "ES6 Template Literals offer a lot of flexibility in generating strings, can you give an example?",
