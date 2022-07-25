@@ -200,7 +200,7 @@ const rawData = [
   },
   {
     question: "Can you give an example of a curry function and why this syntax offers an advantage?",
-    answer: ""
+    answer: "Currying is a pattern where a function with more than one parameter is broken into multiple functions that, when called in series, will accumulate all of the required parameters one at a time. This technique can be useful for making code written in a functional style easier to read and compose. It's important to note that for a function to be curried, it needs to start out as one function, then broken out into a sequence of functions that each accepts one parameter."
   },
   {
     question: "What are the benefits of using spread syntax and how is it different from rest syntax?",
@@ -211,7 +211,7 @@ const rawData = [
   },
   {
     question: "Why you might want to create static class members?",
-    answer: ""
+    answer: "Static class members (properties/methods) are not tied to a specific instance of a class and have the same value regardless of which instance is referring to it. Static properties are typically configuration variables and static methods are usually pure utility functions which do not depend on the state of the instance."
   }
 ]
 
